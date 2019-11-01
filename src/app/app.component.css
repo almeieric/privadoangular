@@ -1,0 +1,23 @@
+*{
+    display: flex;
+}
+input {
+    border-radius: 20px
+
+}
+.box{
+    width:  50%;
+    height: 50%;
+    
+    
+}
+.box1{
+    width:  50%;
+    height: 50%;
+    flex-flow: row wrap;
+}
+.box2{
+    width:  50%;
+    height: 50%;
+    flex-flow: row wrap;
+}
