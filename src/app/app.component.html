@@ -1,24 +1,5 @@
-
-<div class='box'>
- <form>
-   <div class="box1">
-   <label for="nome">Nome: </label>
- <input type="text" name="nome" [(ngModel)]="cliente.Nome"><br/>
- <label for="cpf">CPF: </label>
- <input type="text" name="cpf" [(ngModel)]="cliente.CPF"><br/>
-</div>
-<div class="box2">
- <label for="cep">CEP: </label>
- <input type="text" name="cep" [(ngModel)]="cliente.CEP" (blur)="VerificaCEP()"><br/>
- <label for="endereco">Endereço: </label>
- <input type="text" name="endereco" [(ngModel)]="cliente.Endereco">
-
- <div *ngIf="!cliente.CPFValido()">
- CPF Inválido
- </div>
-</div>
- <div>
- <input type="button" (click)="salvar()" value="Salvar" [disabled]="!cliente.CPFValido()" />
- </div>
- </form>
-</div>
+<form>
+  <input type="text" [(ngModel)]="cliente.UF">
+  <input type="button" value="Salvar" (click)="VerificaUF()">
+  <input type="text" [(ngModel)]="cliente.NomeUF">
+</form>
